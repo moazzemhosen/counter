@@ -1,0 +1,12 @@
+.boldcolor{
+    color: red;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    align-items: center;
+  }
+  .boldcolor>img{
+      width: 100px;
+      height: 100px;
+  }

@@ -27,6 +27,18 @@
 .App-link {
   color: #61dafb;
 }
+.nav{
+  display: flex;
+  justify-content: space-around;
+  height: 150px;
+  background-color: #282c34;
+ 
+}
+.red{
+  background-color: red;
+}
+.green{ background-color: green;}
+
 
 @keyframes App-logo-spin {
   from {

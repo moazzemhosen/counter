@@ -68,3 +68,59 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
+
+
+// import { Category } from './components/Category';
+
+function App() {
+  //  var counter=0;    you cant do like that
+
+  const [counter, setCounter] = useState(1)
+  // const dec=()=>{ 
+
+  //   setCounter(counter - 1)
+  // }
+
+
+// const handeler=(value)=>{
+//   setCounter(counter+value)
+// }
+
+// if(counter>=10 ||counter<=0){
+//    alert("out of area")
+// }
+const odd=()=>{
+  return (<p className='red'>Odd</p>)
+};
+const even=()=>{
+  return (<p className='green'>Even</p>)
+}
+
+  return (
+    <div className='App'>
+      <h3>Counter:{counter}</h3>
+
+      <button onClick={() => {
+        
+        // console.log("clicked")
+        // counter++;
+       setCounter(counter *2)
+        // handeler(-1)
+        
+      }}>Double</button>
+
+      {/* <button onClick={dec}> Decrease</button> */}
+  <div>Nunber is{counter%2===0 ? even():odd()}</div>
+
+    </div>
+  );
+};
